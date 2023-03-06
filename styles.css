@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'Unicode Pro Bold';
+    src: url('./fonts/Type\ Juice\ -\ Unison\ Pro\ Bold\ Round.otf');
+}
+
+@font-face {
+    font-family: 'Unicode Pro Light';
+    src: url('./fonts/Type\ Juice\ -\ Unison\ Pro\ Light\ Round.otf');
+}
+
+
+* {
+    font-size: 16px;
+    font-family: 'Satoshi', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+h1 {
+    margin-top: 0;
+    font-family: 'Unicode Pro Bold';
+    font-size: 70px;
+    color: white;
+    max-width: 893px;
+    text-align: center;
+    padding-top: 160px;
+    display: inline-block;
+  }
+
+body {
+    margin: 0;
+}
+
+
+
+nav {
+    z-index: 100;
+    background-color: #090909;
+    height: 92px;
+    border-bottom: 1px #413F3F solid;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    max-width: 200px;
+    display: inline-flex;
+    margin-left: 120px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    display: inline-flex;
+    margin-right: 120px;
+}
+
+nav li {
+    display: inline-flex;
+    color: white;
+    margin: 0px 18px;
+    justify-self: right;
+    padding: 6px;
+}
+
+nav li:hover {
+    -webkit-animation: glow 5s ease-in-out infinite alternate;
+    -moz-animation: glow 5s ease-in-out infinite alternate;
+    animation: glow 5s ease-in-out infinite alternate;
+    color: white;
+    cursor: pointer;
+}
+
+@-webkit-keyframes glow {
+    7% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0049e6, 0 0 20px #00b0e6, 0 0 25px #00e6d3, 0 0 30px #0068e6, 0 0 30px #00cbe6;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #4ddbff, 0 0 20px #4db8ff, 0 0 25px #4d8bff, 0 0 30px #4dedff, 0 0 35px #4d6bff, 0 0 40px #4dc4ff;
+    }
+  }
+
+.hero {
+    background-image: url('./images/herobg.jpg');
+    background-size: auto;
+    max-height: 900px;
+    min-height: 600px;
+    width: 100%;
+    background-position: top;
+    margin: 0 auto;
+    display: block;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.quote {
+    font-family: 'Satoshi';
+    font-size: 26px;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    max-width: 953px;
+    display: inline-block;
+}
+
+  .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+  }
+  
+  .arrows path {
+    stroke: #ffffff;
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+
+  .about-me {
+    background-color: black;
+    color: white;
+    display: inline-flex;
+    min-height: 550px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .about-me h2 {
+    font-family: 'Unicode Pro Bold';
+    font-size: 32px;
+    padding-left: 15.188rem;
+  }
+
+  .about-me p {
+    inline-size: 29.188rem;
+    padding-left: 15.188rem;
+    font-size: 18px;
+    overflow-wrap: break-word;
+  }
+
+  .about-me img {
+    max-width: 345px;
+    max-height: 345px;
+    margin-left: auto;
+    margin-right: 243px;
+    border-radius: 8px;
+    
+  }
+
+  @media screen and (max-width: 954px) {
+    .about-me p {
+      padding-left: 31.682vw;
+    }
+
+    h1 {
+      font-size: 8vw;
+    }
+
+    .quote {
+      font-size: 3.390vw;
+    }
+
+    .desktop-menu ul {
+      display: none;
+    }
+
+    nav img {
+      padding: none;
+      margin: none;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+    color: #1E1E23;
+    opacity:1;
+    font-family: 'work sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+  }
+  a:hover {
+    opacity:0.5;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  
+  
+  .container {
+    margin-top: 50px; 
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+  @media screen and (min-width: 954px) {
+    #menuToggle {
+      display: none;
+    }
+  }
+  
